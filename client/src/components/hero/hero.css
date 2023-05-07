@@ -1,0 +1,134 @@
+header {
+    height: 100vh;
+    background-image: url(../../Assests/davu1.jpg);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed; 
+}
+
+
+ .container__header .overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3e64ff;
+    opacity: 0.7;
+} 
+
+.container__header{
+    margin: 4rem;
+}
+
+.container__header h2{
+    position: relative;
+    font-size: 5.4rem;
+    color: #fff;
+    padding: 12rem 0 0 2rem;
+    z-index: 1;    
+   
+}
+
+.container__header h2 span{
+    color: #a0f669;
+}
+
+.container__header p{
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    margin-bottom: 5rem;
+    padding: 0 20rem 0 20rem;
+    opacity: 0.6;
+}
+ 
+
+
+ .btn {
+    position: relative;
+    background: #202C45;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    box-shadow:inset rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: all 400ms ease;
+    /* margin-bottom: 5rem; */
+} 
+
+.btn:hover{
+    background: #000;
+    
+}
+
+
+@media screen and (max-width: 768px){
+    header {
+        height: 80vh;
+        background-image: url(../../Assests/davu1-mobile.jpg);
+        background-repeat: no-repeat; 
+        background-size: 100%;
+        text-align: center;
+        position: relative;
+        background-attachment: fixed; 
+    } 
+
+    .container__header h2{
+        font-size: 4.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .container__header p{
+        padding: 0 6rem 0 6rem;
+    }
+
+    .btn{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 640px){
+header{
+    height: 60vh;
+}
+
+    .container__header h2{
+        font-size: 3rem;
+    }
+
+    .container__header p{
+        padding: 0 4rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    header{
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 320px){
+    header{
+        height: 50vh;
+        background-image: url(../../Assests/davu1-smobile.jpg);
+    }
+
+    .container__header h2{
+        font-size: 1.5rem;
+    }
+
+    .container__header p{
+        padding: 0 1rem;
+        font-size: 0.7rem;
+        margin-bottom: 3rem;
+    }
+
+    .btn{
+        font-size: 0.6rem;
+    }
+}

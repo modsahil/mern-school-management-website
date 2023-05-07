@@ -1,0 +1,80 @@
+.preload{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    background: #F2184F;
+    height: 2rem;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
+    
+}
+.preload a{
+    
+    font-size: 0.9rem;
+    font-weight: 400;
+    align-items: center;
+}
+.preload-first{
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .preload{
+        gap: 1.5rem;
+    }
+    .preload a{
+        font-size: 0.6rem;
+    }
+
+    .preload-first{
+        margin-left: 20px;
+    }
+
+    .preload-second{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .preload{
+        gap: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .preload{
+        gap: 0.8rem;
+    }
+
+    .preload a{
+        font-size: 0.52rem;
+    }
+}
+
+@media screen and (max-width: 543px){
+    .preload{
+        gap: 0.6rem;
+    }
+
+    .preload a{
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .preload{
+        gap: 0.5rem;
+    }
+
+    .preload a{
+        font-size: 0.42rem;
+    }
+}
+
+
+

@@ -1,0 +1,239 @@
+/* .container__impcard{
+   
+} */
+
+.impCard{
+    margin: 0 5rem;
+}
+
+.btn-card{
+    background: #202C45;
+    color: #fff;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    transition: all 400ms ease;
+    border-radius: 5rem;
+    font-size: 0.8rem;
+}
+
+.btn-card:hover{
+    background: #333;
+}
+
+.imp_head{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.imp_head h4{
+    font-size: 1.1rem;
+    color: #F2184F;
+}
+
+.imp_head h2{
+    font-size: 2rem;
+    color: #202C45;
+}
+
+.imp__cards{
+    margin-top: 6rem;
+    /* row-gap: 10rem; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    /* margin: 0 5rem 0 5rem; */
+}
+
+.imp__card{
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+    border-radius: 5px;
+    padding: 4rem 3.4rem;
+    transition: all 0.2s linear;
+}
+
+.imp__card p{
+    margin-bottom: 2rem;
+    color: #202C45;
+}
+
+.imp__card:hover{
+    transform: translateY(-3rem);
+}
+
+.uil{
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(144 172 209 / 20%);
+    display: inline-block;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    border: 1px solid #fff;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: rgb(0, 10, 45);
+    animation: water-wave 3s linear infinite
+}
+
+.uil::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(11, 15, 20, 0.9);
+    width: 90% ;
+    height: 90%;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    background-color: transparent;
+    animation: water-wave 5s linear infinite alternate;
+}
+
+@keyframes water-wave {
+    0% {
+      border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+    50% {
+      border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
+    }
+    100% {
+      border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+  }
+
+  .imp__card h3{
+    text-transform: capitalize;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 768px){
+
+    .imp_head{
+        margin: 3rem;
+    }
+    .imp__cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imp__card{
+        padding: 1.5rem 1.5rem;
+        /* height: 25rem; */
+    }
+
+    .uil{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .imp__card h3{
+        margin-top: 2rem;
+    }
+  }
+
+
+  @media screen and (max-width: 640px){
+  .impCard{
+    margin: 0 2rem 2rem 2rem;
+
+  }
+
+  .imp__cards{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    /* justify-content: center; */
+    place-items: center;
+  }
+
+    .imp__card{
+        padding: 1rem;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .imp__card:hover{
+        transform: translateY(-1.5rem);
+    }
+
+    .uil{
+        width: 5rem;
+        height: 5rem;
+        padding: 1rem 1.4rem;
+    }
+
+    .uil::after{
+        width: 60%;
+        height: 60%;
+    }
+
+    .imp__card h3{
+        margin: 1rem 0 1rem 0;
+        font-size: 1rem;
+    }
+
+    .imp__card p{
+        margin-bottom: 1.5rem;
+        font-size: 0.8rem;
+    }
+  }
+
+
+  @media screen and (max-width: 568px){
+    .impCard{
+        margin: 0 1rem 2rem 1rem;
+    }
+  }
+
+  @media screen and (max-width: 543px){
+    .impCard{
+        margin: 0 0.5rem 2rem 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .imp__cards{
+        gap: 1rem;
+        margin-top: 4rem;
+        /* justify-content: center; */
+        place-items: center;
+        /* flex-wrap: wrap; */
+      }
+    
+        .imp__card{
+            padding: 0.5rem;
+            height: 12rem;
+            width: 12rem;
+        }
+    
+        .imp__card:hover{
+            transform: translateY(-1rem);
+        }
+    
+        .uil{
+            width: 3rem;
+            height: 3rem;
+            padding: 0.5rem 0.9rem;
+        }
+    
+        .uil::after{
+            width: 60%;
+            height: 60%;
+        }
+    
+        .imp__card h3{
+            margin: 0.8rem 0 0.6rem 0;
+            font-size: 0.9rem;
+        }
+    
+        .imp__card p{
+            margin-bottom: 1.4rem;
+            font-size: 0.7rem;
+        }
+  }
+
+  @media screen and (max-width: 320px){
+    .imp__cards{
+        grid-template-columns: 1fr;
+    }
+
+    
+  }

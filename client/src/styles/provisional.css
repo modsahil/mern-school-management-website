@@ -1,0 +1,135 @@
+.provisional{
+    background: #F5F5F5;
+    /* height: 110vh; */
+}
+
+.provisional-head{
+    padding-top: 8rem;
+    background: #000;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.provisional-head h2, h6, p{
+    color: #fff;
+}
+
+.heading-school{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.provisional-head h6{
+    font-size: 1.2rem;
+    /* margin-bottom: 2rem; */
+    color: #fff;
+} 
+
+h2,h6,p {
+    color: black;
+}
+
+.u-head{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-weight: 500;
+    max-width: 50rem;
+    margin: auto;
+    color: #fff;
+}
+
+.r-form-btn{
+    font-size: 1.5rem ;
+    background: orange;
+    padding: .5rem 1rem .5rem 1rem;
+    border: 1px solid #fff;
+    margin-bottom: 2rem;
+    /* border-radius: .5rem; */
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    gap: 2rem;
+    margin: 2.5rem 3rem;
+}
+
+.card1, .card2, .card3{
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
+    height: 30rem;
+}
+
+.c-head{
+    font-size: 1.5rem;
+    background: orange;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding: .5rem 1rem .5rem 1rem;
+    width: max-content;
+    margin: 1.2rem auto;
+}
+
+.c-body{
+display: flex;
+flex-direction: column;
+gap: 0.8rem;
+justify-content: center;
+align-items: center;
+/* font-size: 1.1rem; */
+}
+
+.c-body li{
+    color: black;
+    font-weight: 600;
+}
+
+.opt-bold{
+    background: lightblue;
+    margin-top: 1rem;
+    padding: .5rem 0;
+    border-radius: 0.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* //point  */
+
+.point-container{
+    margin: 4rem 0;
+}
+
+.card-bottom{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 4rem 5rem;
+}
+
+.noted h6{
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid red;
+    
+}
+
+
+.noted-points ol{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 0 8rem;
+    gap: 1rem;
+}
+
+.noted-points ol li{
+    color: black;
+    list-style: int;
+    line-height: 2;
+    text-transform: capitalize;
+}
